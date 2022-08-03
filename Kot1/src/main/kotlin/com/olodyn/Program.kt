@@ -1,6 +1,7 @@
 package com.olodyn
 
 
+/*
 class Program {
     companion object{
         @JvmStatic
@@ -14,29 +15,29 @@ class Program {
     }
 }
 
-open class Student(firstName:String, lastName: String, _id: Int , var tutor: String=""):Person(firstName, lastName){
-    val id : Int
-    init {
-        id = _id
-    }
-    fun enrole(courseName: String){
-        val course = Courses.allCourses
-            .filter { it.Title == courseName }
-            .firstOrNull()
-    }
-
-    override fun getAddress(): String { return "" }
-
-    override fun getName(): String { return "$firstName $lastName" }
-    companion object: XmlSerializer<Student>{
-        override fun toXml(item: Student) {
-
+n  Undergraduate(name)
         }
+        fun creaopen class Student(firstName:String, lastName: String, _id: Int , var tutor: String=""):Person(firstName, lastName){
+            val id : Int
+            init {
+                id = _id
+            }
+            fun enrole(courseName: String){
+                val course = Courses.allCourses
+                    .filter { it.Title == courseName }
+                    .firstOrNull()
+            }
 
-        fun createUndergrad(name: String): Undergraduate{
-            return  Undergraduate(name)
-        }
-        fun createPostgrad(name: String): Postgraduate{
+            override fun getAddress(): String { return "" }
+
+            override fun getName(): String { return "$firstName $lastName" }
+            companion object: XmlSerializer<Student>{
+                override fun toXml(item: Student) {
+
+                }
+
+                fun createUndergrad(name: String): Undergraduate{
+                    returtePostgrad(name: String): Postgraduate{
             return  Postgraduate(name)
         }
     }
@@ -45,5 +46,6 @@ open class Student(firstName:String, lastName: String, _id: Int , var tutor: Str
 
 class Undergraduate(firstName: String): Student(firstName, "",1){}
 class Postgraduate(firstName: String): Student(firstName, "",1){}
+*/
 
 interface XmlSerializer<T> { fun toXml(item:T)}
